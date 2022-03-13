@@ -1,10 +1,10 @@
-# tfmod_sns_subscription
+# terraform_sns_subscription
 
 Terraform module to create SNS subscriptions to endpoint.
 
 ## Dependencies
 
-SNS Topic <https://github.com/virsas/tfmod_kms>
+SNS Topic <https://github.com/virsas/terraform_kms>
 
 ## Terraform example
 
@@ -13,7 +13,7 @@ SNS Topic <https://github.com/virsas/tfmod_kms>
 # SNS subscription
 ##################
 module "sns_subscription_alarms_pagerduty" {
-  source = "github.com/virsas/tfmod_sns_subscription"
+  source = "github.com/virsas/terraform_sns_subscription"
   # ARN of the associated SNS topic
   topic = module.sns_topic_alarms.arn
   # the protocol of the endpoint
