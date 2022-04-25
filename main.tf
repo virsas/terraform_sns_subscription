@@ -1,3 +1,7 @@
+provider "aws" {
+  region = var.region
+}
+
 resource "aws_sns_topic_subscription" "sns" {
   topic_arn              = var.topic
   protocol               = var.protocol
