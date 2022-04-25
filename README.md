@@ -4,7 +4,7 @@ Terraform module to create SNS subscriptions to endpoint.
 
 ## Dependencies
 
-SNS Topic <https://github.com/virsas/terraform_kms>
+- SNS Topic <https://github.com/virsas/terraform_kms>
 
 ## Terraform example
 
