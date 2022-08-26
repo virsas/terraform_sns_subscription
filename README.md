@@ -13,7 +13,7 @@ Terraform module to create SNS subscriptions to endpoint.
 # SNS subscription
 ##################
 module "sns_subscription_alarms_pagerduty" {
-  source = "github.com/virsas/terraform_sns_subscription"
+  source = "git::https://github.com/virsas/terraform_sns_subscription.git?ref=v1.0.0"
   # ARN of the associated SNS topic
   topic = module.sns_topic_alarms.arn
   # the protocol of the endpoint
